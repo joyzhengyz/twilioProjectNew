@@ -1,0 +1,19 @@
+<html>
+
+	<head>
+		<title>Send_Message</title>
+	</head>
+
+	<body>
+
+		<form method="post">
+		    {% csrf_token %}
+		    {{ form }}
+		    <input type="submit" value="Submit" />
+		</form>
+
+		{{result}}
+
+	</body>
+	
+</html>
