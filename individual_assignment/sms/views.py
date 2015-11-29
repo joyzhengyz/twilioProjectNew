@@ -10,13 +10,13 @@ def sms(request):
 
             number = form.cleaned_data['to']
             message = form.cleaned_data['message']
-            msg_body = 'Hello from Yezhen Zheng "' + message + '"'
+            msg_body = 'Hello form Firstname Lastname "' + message + '"'
 
-            ACCOUNT_SID = "ACb1a6efea70726b9928a9dafbcf920149"
-            AUTH_TOKEN = "3c8fd35ced3c74f045e4647e79b3313e"
+            ACCOUNT_SID = "AC133500ef845c78de23e4b408362b99d4"
+            AUTH_TOKEN = "c1210639f308905ecbc4ddd2c534945e"
             client = TwilioRestClient(ACCOUNT_SID, AUTH_TOKEN)
 
-            client.messages.create( to = number, from_ = "+17326866669", body = msg_body,)
+            client.messages.create( to = number, from_ = "+17472310123", body = msg_body,)
             result = 'Done!!! "' + message + '" to ' + str(number)
 
             return render(request, 'sms.html', {'form': form, 'result': result})

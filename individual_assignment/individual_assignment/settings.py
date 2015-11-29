@@ -1,5 +1,5 @@
 """
-Django settings for project on Heroku. Fore more info, see:
+Django settings for individual_assignment project on Heroku. Fore more info, see:
 https://github.com/heroku/heroku-django-template
 
 For more information on this file, see
@@ -20,7 +20,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 # See https://docs.djangoproject.com/en/1.8/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = "1hx(3e9rglzkhshfydfkr_fb^45r-$5)&o1)gz^1dn6ag3(e(^"
+SECRET_KEY = "@29b(*iss=1=ls#55*eqva$^^&fdpsrfv_=7)r9w*!#n1lqhfx"
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -38,8 +38,7 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'sms',
-    'bootstrap3',
-) 
+)
 
 MIDDLEWARE_CLASSES = (
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -80,8 +79,6 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-        'HOST':'localhost',
-
     }
 }
 
